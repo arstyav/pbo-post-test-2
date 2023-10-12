@@ -7,7 +7,9 @@ Kelas         : Sistem Informasi'A 22
 
 Mata Kuliah   : Pemrograman Berorientasi Objek
 
-Pada source package utama terdapat 2 package yaitu, kedai seblak dan menu. Pada package kedai seblak terdapat class "SeblakStore.java" sebagai Main Class. Di dalam class tersebut terdapat program sebagai berikut :
+Dalam post test kali ini saya menerapkan penggunaan **method yang bersifat static** pada class **Menu.java**. Kemudian saya juga menerapkan **Inheritance atau pewarisan** pada class SpicySeblak.java & CheeseSeblak.java sebagai **child**, dan SeblakProduct.java sebagai **parentnya**. Kemudian untuk penerapan **Polymorphism** yaitu **overriding** terdapat pada class SpicySeblak.java dan CheeseSeblak.java. Sementara, untuk penerapan fitur abstract terdapat pada class **SeblakProduct.java**.
+
+Pada source package utama terdapat 2 package yaitu, kedaiseblak dan menu. Pada package kedaiseblak terdapat class "SeblakStore.java" sebagai Main Class. Di dalam class tersebut terdapat program sebagai berikut :
 
 ![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/c13d6938-2e71-4c20-91d1-1a164fd7525e)
 
@@ -163,4 +165,125 @@ Pertama, kita akan membahas class pertama yaitu **"CheeseSeblak.java"**.
 **"@Override"** ini adalah anotasi @Override yang menunjukkan bahwa metode yang berada di bawahnya (printProduct()) akan meng-override (melakukan substitusi) metode dengan nama yang sama dari kelas induk (SeblakProduct).
 
 **"public void printProduct() { ... }"** ini adalah implementasi metode printProduct() yang diwarisi dari kelas SeblakProduct. Metode ini mencetak informasi produk Cheese Seblak, termasuk ID, nama, harga, dan jenis keju (cheese type).
+
+Selanjutnya kita akan ke class kedua, yaitu **"SpicySeblak.java"**
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/80ac059b-695f-4fb2-a857-591710b97ae9)
+
+**"package menu;"** Ini adalah deklarasi paket (package) di mana kelas SpicySeblak berada. Paket ini digunakan untuk mengelompokkan kelas-kelas terkait bersama dalam satu direktori.
+
+**"public class SpicySeblak extends SeblakProduct {"** Ini adalah deklarasi kelas SpicySeblak yang merupakan turunan dari kelas SeblakProduct. Dengan kata lain, SpicySeblak adalah subkelas dari SeblakProduct dan mewarisi sifat dan perilaku dari kelas induknya.
+
+**"private String levelSpicy;"** Ini adalah deklarasi variabel instance levelSpicy yang merupakan tipe data String. Variabel ini digunakan untuk menyimpan informasi tentang tingkat kepedasan (level spicy) dari produk Spicy Seblak.
+
+**"public SpicySeblak(String idProduct, String nameProduct, int priceProduct, String levelSpicy) { ... }"** Ini adalah konstruktor kelas SpicySeblak. Konstruktor ini digunakan untuk membuat objek SpicySeblak baru dengan menginisialisasi nilai dari variabel-instance (idProduct, nameProduct, priceProduct, dan levelSpicy) saat objek dibuat.
+
+**"public final String getLevelSpicy() { ... }"** Ini adalah metode getter (getLevelSpicy()) yang digunakan untuk mengambil nilai variabel levelSpicy. Metode ini bersifat final, yang berarti tidak dapat di-overide oleh subkelas.
+
+**"public void setLevelSpicy(String levelSpicy) { ... }"** Ini adalah metode setter (setLevelSpicy()) yang digunakan untuk mengatur nilai variabel levelSpicy dengan nilai yang baru.
+
+**"@Override"** Ini adalah anotasi @Override yang menunjukkan bahwa metode yang berada di bawahnya (printProduct()) akan meng-override (melakukan substitusi) metode dengan nama yang sama dari kelas induk (SeblakProduct).
+
+**"public void printProduct() { ... }"** Ini adalah implementasi metode printProduct() yang diwarisi dari kelas SeblakProduct. Metode ini mencetak informasi produk Spicy Seblak, termasuk ID, nama, harga, dan tingkat kepedasan (level spicy).
+
+Selanjutnya adalah class yang ketiga yaitu, **"Menu.java"**.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/a8290d88-ac2d-4940-b486-55707d4ac3ff)
+
+**"package menu;"** Ini adalah deklarasi paket (package) di mana kelas Menu berada. Paket ini digunakan untuk mengelompokkan kelas-kelas terkait bersama dalam satu direktori.
+
+**"private static ArrayList<SpicySeblak> spicySeblaks = new ArrayList<>();"** Ini adalah deklarasi variabel statis spicySeblaks yang merupakan ArrayList dari objek SpicySeblak. Variabel ini digunakan untuk menyimpan daftar objek Spicy Seblak dalam menu. Variabel statis berarti bahwa variabel ini milik kelas, bukan objek individu, dan dapat diakses tanpa harus membuat instansiasi objek Menu.
+
+**"private static ArrayList<CheeseSeblak> cheeseSeblaks = new ArrayList<>();"** Ini adalah deklarasi variabel statis cheeseSeblaks yang merupakan ArrayList dari objek CheeseSeblak. Variabel ini digunakan untuk menyimpan daftar objek Cheese Seblak dalam menu.
+
+**"public static void addSpicySeblak(SpicySeblak spicySeblak) { ... }"** Ini adalah metode statis addSpicySeblak yang digunakan untuk menambahkan objek SpicySeblak ke dalam daftar spicySeblaks
+
+**"public static void removeSpicySeblak(String idProduct) { ... }"** Ini adalah metode statis removeSpicySeblak yang digunakan untuk menghapus objek SpicySeblak dari daftar spicySeblaks berdasarkan ID produk.
+
+**"public static void printSpicySeblak() { ... }"** Ini adalah metode statis printSpicySeblak yang digunakan untuk mencetak semua objek SpicySeblak dalam daftar spicySeblaks.
+
+**"public static void updateSpicySeblak(String idProduct, String nameProduct, int priceProduct, String levelSpicy) { ... }"** Ini adalah metode statis updateSpicySeblak yang digunakan untuk memperbarui objek SpicySeblak dalam daftar spicySeblaks berdasarkan ID produk. Metode ini menerima ID produk baru, nama produk baru, harga produk baru, dan tingkat kepedasan baru sebagai parameter.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/87093940-8b37-43d7-9fe1-ada3754c7e66)
+
+**"public static void addCheeseSeblak(CheeseSeblak cheeseSeblak) { ... }"** Metode ini digunakan untuk menambahkan objek CheeseSeblak ke dalam daftar cheeseSeblaks. Objek CheeseSeblak yang diterima sebagai parameter ditambahkan ke ArrayList cheeseSeblaks.
+
+**"public static void removeCheeseSeblak(String idProduct) { ... }"** Metode ini digunakan untuk menghapus objek CheeseSeblak dari daftar cheeseSeblaks berdasarkan ID produk yang diberikan sebagai parameter. Metode ini menggunakan loop untuk mencari objek dengan ID yang sesuai dan menghapusnya dari ArrayList.
+
+**"public static void printCheeseSeblak() { ... }"** Metode ini digunakan untuk mencetak semua objek CheeseSeblak dalam daftar cheeseSeblaks. Metode ini menggunakan loop for-each untuk mengakses setiap objek CheeseSeblak dalam ArrayList dan memanggil metode printProduct() untuk mencetak detail produk.
+
+**"public static void updateCheeseSeblak(String idProduct, String nameProduct, int priceProduct, String levelCheese) { ... }"** Metode ini digunakan untuk memperbarui objek CheeseSeblak dalam daftar cheeseSeblaks berdasarkan ID produk yang diberikan sebagai parameter. Metode ini menggunakan loop untuk mencari objek dengan ID yang sesuai, kemudian memperbarui nama produk, harga produk, dan tingkat keju dengan nilai yang baru yang diberikan sebagai parameter.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/f8050019-c9c2-4f29-84a5-27d886760bb9)
+
+**"public static void printAllMenu() { ... }"** Metode ini digunakan untuk mencetak semua produk dalam menu, baik itu produk Spicy Seblak maupun Cheese Seblak. Metode ini memanggil metode printSpicySeblak() untuk mencetak semua produk Spicy Seblak, dan kemudian memanggil metode printCheeseSeblak() untuk mencetak semua produk Cheese Seblak. Dengan memanggil metode-metode yang sudah ada sebelumnya, metode ini menyajikan semua produk dalam satu tampilan.
+
+**"public static boolean checkIdSpicy(String idSeblakSpicy) { ... }"** Metode ini digunakan untuk memeriksa apakah ID yang diberikan (idSeblakSpicy) cocok dengan salah satu ID produk Spicy Seblak dalam daftar. Metode ini menggunakan loop untuk mencari ID yang sesuai dalam ArrayList spicySeblaks. Jika ID ditemukan, metode mengembalikan true, menunjukkan bahwa ID tersebut ada dalam daftar produk Spicy Seblak. Jika tidak ditemukan, metode mengembalikan false.
+
+**"public static boolean checkIdCheese(String idSeblakCheese) { ... }"** Metode ini mirip dengan checkIdSpicy(), tetapi digunakan untuk memeriksa apakah ID yang diberikan (idSeblakCheese) cocok dengan salah satu ID produk Cheese Seblak dalam daftar cheeseSeblaks. Metode ini juga menggunakan loop untuk mencari ID yang sesuai dalam ArrayList cheeseSeblaks. Jika ID ditemukan, metode mengembalikan true, menunjukkan bahwa ID tersebut ada dalam daftar produk Cheese Seblak. Jika tidak ditemukan, metode mengembalikan false.
+
+Selanjutnya kita akan ke class yang terakhit yaitu, **"SeblakProduct.java"**.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/ba282b27-3aeb-4efa-b90f-632579b68345)
+
+**"abstract public class SeblakProduct { ... }"** Ini adalah deklarasi kelas SeblakProduct sebagai kelas abstrak. Kelas abstrak adalah kelas yang tidak dapat diinstansiasi. Artinya, Anda tidak dapat membuat objek langsung dari kelas ini. Kelas abstrak ini memiliki metode abstrak (yang dideklarasikan tetapi tidak diimplementasikan di kelas ini) yang harus diimplementasikan oleh subkelasnya.
+
+**"private final String idProduct;"** Ini adalah deklarasi variabel instance idProduct yang digunakan untuk menyimpan ID unik produk. Variabel ini ditandai sebagai final, artinya nilainya tidak dapat diubah setelah diinisialisasi.
+
+**"private String nameProduct;"** Ini adalah deklarasi variabel instance nameProduct yang digunakan untuk menyimpan nama produk.
+
+**"private int priceProduct;"** Ini adalah deklarasi variabel instance priceProduct yang digunakan untuk menyimpan harga produk.
+
+**"public SeblakProduct (String idProduct, String nameProduct, int priceProduct) { ... }"** Ini adalah konstruktor kelas SeblakProduct yang digunakan untuk membuat objek SeblakProduct baru. Konstruktor ini mengambil tiga parameter: idProduct, nameProduct, dan priceProduct untuk menginisialisasi variabel-instance dengan nilai yang sesuai.
+
+**"public final String getIdProduct() { ... }"** Ini adalah metode getter (getIdProduct()) yang digunakan untuk mengambil nilai variabel idProduct.
+
+**"public final String getNameProduct() { ... }"** Ini adalah metode getter (getNameProduct()) yang digunakan untuk mengambil nilai variabel nameProduct.
+
+**"public final int getPriceProduct() { ... }"** Ini adalah metode getter (getPriceProduct()) yang digunakan untuk mengambil nilai variabel priceProduct.
+
+**"public final void setNameProduct(String nameProduct) { ... }"** Ini adalah metode setter (setNameProduct()) yang digunakan untuk mengatur nilai variabel nameProduct dengan nilai yang baru.
+
+**"public final void setPriceProduct(int priceProduct) { ... }"** Ini adalah metode setter (setPriceProduct()) yang digunakan untuk mengatur nilai variabel priceProduct dengan nilai yang baru.
+
+**"abstract public void printProduct();"** Ini adalah deklarasi metode abstrak (printProduct()) yang harus diimplementasikan oleh setiap subkelas SeblakProduct. Metode ini bertanggung jawab untuk mencetak detail produk ke layar. Karena ini adalah metode abstrak, itu berarti setiap subkelas SeblakProduct harus memberikan implementasi konkret untuk metode ini.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
