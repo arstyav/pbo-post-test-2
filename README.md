@@ -64,3 +64,25 @@ String idRemoveSpicy = scanner.nextLine();"** program menunggu pengguna memasukk
 **"Menu.removeSpicySeblak(idRemoveSpicy);
 System.out.println("Spicy Seblak with ID " + idRemoveSpicy + " has been removed!");"** Jika ID ditemukan, program memanggil metode removeSpicySeblak dari kelas Menu untuk menghapus objek Spicy Seblak dengan ID tersebut dari menu. Program kemudian mencetak pesan konfirmasi bahwa Spicy Seblak dengan ID yang dimasukkan telah dihapus.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/0f73d03c-0e67-4277-912a-c0b28eb292af)
+
+**"case 4:"** ini adalah kasus keempat di dalam switch statement. Jika nilai menuStore adalah 4, program akan menampilkan pesan menu "Cheese Seblak" ke layar.
+
+**"System.out.print("> ID: ");
+String idRemoveCheese = scanner.nextLine();"** program menunggu pengguna memasukkan ID Cheese Seblak yang ingin dihapus dari menu.
+
+**"if (!Menu.checkIdCheese(idRemoveCheese)) {
+    System.out.println("ID not found!");
+    break;
+}"** program memanggil metode checkIdCheese dari kelas Menu untuk memeriksa apakah ID Cheese Seblak yang dimasukkan oleh pengguna ada dalam menu atau tidak. Jika ID tidak ditemukan, program akan mencetak pesan "ID not found!" dan keluar dari switch statement menggunakan pernyataan break.
+
+**"Menu.removeCheeseSeblak(idRemoveCheese);
+System.out.println("Cheese Seblak with ID " + idRemoveCheese + " has been removed!");"** Jika ID ditemukan, program memanggil metode removeCheeseSeblak dari kelas Menu untuk menghapus objek Cheese Seblak dengan ID tersebut dari menu. Program kemudian mencetak pesan konfirmasi bahwa Cheese Seblak dengan ID yang dimasukkan telah dihapus.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/41bb8fba-1f23-49cb-ba7b-fbb2c8a00871)
+
+**"case 5:"** ini adalah kasus kelima di dalam switch statement. Jika nilai menuStore adalah 5, program akan menjalankan metode printAllMenu() dari objek Menu. Metode ini ditujukan untuk mencetak semua item menu yang ada.
+
+**"Menu.printAllMenu();"** ini adalah panggilan ke metode printAllMenu() yang telah didefinisikan di dalam kelas Menu. Metode ini bertanggung jawab untuk mencetak semua item menu yang ada di dalam objek Menu.
+
+**""case 6:"** 
