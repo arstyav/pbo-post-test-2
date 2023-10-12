@@ -222,7 +222,7 @@ Selanjutnya adalah class yang ketiga yaitu, **"Menu.java"**.
 
 **"public static boolean checkIdCheese(String idSeblakCheese) { ... }"** Metode ini mirip dengan checkIdSpicy(), tetapi digunakan untuk memeriksa apakah ID yang diberikan (idSeblakCheese) cocok dengan salah satu ID produk Cheese Seblak dalam daftar cheeseSeblaks. Metode ini juga menggunakan loop untuk mencari ID yang sesuai dalam ArrayList cheeseSeblaks. Jika ID ditemukan, metode mengembalikan true, menunjukkan bahwa ID tersebut ada dalam daftar produk Cheese Seblak. Jika tidak ditemukan, metode mengembalikan false.
 
-Selanjutnya kita akan ke class yang terakhit yaitu, **"SeblakProduct.java"**.
+Selanjutnya kita akan ke class yang terakhir yaitu, **"SeblakProduct.java"**.
 
 ![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/ba282b27-3aeb-4efa-b90f-632579b68345)
 
@@ -274,42 +274,30 @@ Sama halnya dengan menu 3, kita juga dapat menghapus menu di menu Cheese Seblak.
 
 Pada menu 5, kita dapat menampilkan semua menu yang telah ditambahkan.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/40559a17-15dd-4ffa-b83d-acd7e6c23a5b)
 
+Pada menu 6, kita dapat menampilkan menu di menu Spicy Seblak.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/ec693b74-ad32-46a4-aaf9-71a3764331f4)
 
+Pada menu 7, kita dapat menampilkan menu di menu Cheese Seblak.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/cb1211c5-364f-499d-9cc2-43739ed626ae)
 
+Pada menu 8, kita dapat mengupdate menu di Spicy Seblak. Sama halnya seperti menambah meny, kita akan diminta memasukkan ID, Nama, Harga dan Tingkat Kepedasan yang baru.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/4279f21e-73a1-46ee-ae15-91fa885c543d)
 
+Pada menu 9 sama seperti menu 8, namun hanya berbeda di jenis keju dimana kita harus memasukkan jenis keju yang baru.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/4347c6c1-1653-4f09-af9d-897001f432f0)
 
+Pada menu 10, kita akan otomatis terkeluar dari program.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/8e0e09eb-a076-4fbe-af93-835882011d9f)
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/7fa938d0-315a-4f7d-b77c-06482fcb2a6b)
 
+Inilah output yang akan dihasilkan jika user salah memasukkan inputan menu, dan salah memasukkan ID Seblak.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Selesai dan Terimakasih.
