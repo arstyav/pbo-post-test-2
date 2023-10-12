@@ -85,4 +85,82 @@ System.out.println("Cheese Seblak with ID " + idRemoveCheese + " has been remove
 
 **"Menu.printAllMenu();"** ini adalah panggilan ke metode printAllMenu() yang telah didefinisikan di dalam kelas Menu. Metode ini bertanggung jawab untuk mencetak semua item menu yang ada di dalam objek Menu.
 
-**""case 6:"** 
+**""case 6:"** ini adalah kasus keenam di dalam switch statement. Jika nilai menuStore adalah 6, program akan menjalankan metode printSpicySeblak() dari objek Menu. Metode ini ditujukan untuk mencetak semua item menu Spicy Seblak yang ada.
+
+**"Menu.printSpicySeblak();"** ini adalah panggilan ke metode printSpicySeblak() yang telah didefinisikan di dalam kelas Menu. Metode ini bertanggung jawab untuk mencetak semua item menu Spicy Seblak yang ada di dalam objek Menu.
+
+**"case 7:"** ini adalah kasus ketujuh di dalam switch statement. Jika nilai menuStore adalah 7, program akan menjalankan metode printCheeseSeblak() dari objek Menu. Metode ini ditujukan untuk mencetak semua item menu Cheese Seblak yang ada.
+
+**"Menu.printCheeseSeblak();"** ini adalah panggilan ke metode printCheeseSeblak() yang telah didefinisikan di dalam kelas Menu. Metode ini bertanggung jawab untuk mencetak semua item menu Cheese Seblak yang ada di dalam objek Menu.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/e36c6d5c-97af-4962-adc7-9c6a73c54364)
+
+**"case 8:"** Ini adalah kasus kedelapan di dalam switch statement. Jika nilai menuStore adalah 8, program akan menampilkan pesan menu "Spicy Seblak" ke layar.
+
+**"System.out.print("> ID: ");
+String idUpdateSpicy = scanner.nextLine();"** program menunggu pengguna memasukkan ID Spicy Seblak yang ingin diperbarui.
+
+**"if (!Menu.checkIdSpicy(idUpdateSpicy)) {
+    System.out.println("ID not found!");
+    break;
+}"** program memanggil metode checkIdSpicy dari kelas Menu untuk memeriksa apakah ID Spicy Seblak yang dimasukkan oleh pengguna ada dalam menu atau tidak. Jika ID tidak ditemukan, program akan mencetak pesan "ID not found!" dan keluar dari switch statement menggunakan pernyataan break.
+
+**"System.out.print("> Name: ");
+String nameUpdateSpicy = scanner.nextLine();
+System.out.print("> Price: ");
+int priceUpdateSpicy = scanner.nextInt();
+scanner.nextLine();
+System.out.print("> Level Spicy: ");
+String levelUpdateSpicy = scanner.nextLine();"** 
+Program menunggu pengguna memasukkan data baru untuk Spicy Seblak yang ingin diperbarui.
+
+**"Menu.updateSpicySeblak(idUpdateSpicy, nameUpdateSpicy, priceUpdateSpicy, levelUpdateSpicy);"** Metode ini bertugas untuk memperbarui objek Spicy Seblak dalam menu dengan data baru yang dimasukkan oleh pengguna.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/60451368-efec-40a1-9207-9f3ea6283988)
+
+**"case 9:"** ini adalah kasus kesembilan di dalam switch statement. Jika nilai menuStore adalah 9, program akan menampilkan pesan menu "Cheese Seblak" ke layar.
+
+**"System.out.print("> ID: ");
+String idUpdateCheese = scanner.nextLine();"** Program menunggu pengguna memasukkan ID Cheese Seblak yang ingin diperbarui.
+
+**"if (!Menu.checkIdCheese(idUpdateCheese)) {
+    System.println("ID not found!");
+    break;
+}"** Program memanggil metode checkIdCheese dari kelas Menu untuk memeriksa apakah ID Cheese Seblak yang dimasukkan oleh pengguna ada dalam menu atau tidak. Jika ID tidak ditemukan, program akan mencetak pesan "ID not found!" dan keluar dari switch statement menggunakan pernyataan break.
+
+**"System.out.print("> Name: ");
+String nameUpdateCheese = scanner.nextLine();
+System.out.print("> Price: ");
+int priceUpdateCheese = scanner.nextInt();
+scanner.nextLine();
+System.out.print("> Cheese Type: ");
+String cheeseUpdateType = scanner.nextLine();"** Program menunggu pengguna memasukkan data baru untuk Cheese Seblak yang ingin diperbarui.
+
+**"Menu.updateCheeseSeblak(idUpdateCheese, nameUpdateCheese, priceUpdateCheese, cheeseUpdateType);"** Metode ini bertugas untuk memperbarui objek Cheese Seblak dalam menu dengan data baru yang dimasukkan oleh pengguna.
+
+**"case 10:"** Ini adalah kasus kesepuluh di dalam switch statement. Jika nilai menuStore adalah 10, program akan keluar dari program secara keseluruhan dengan menggunakan System.exit(0). Ini adalah cara untuk mengakhiri program.
+
+**"default:"** Ini adalah blok yang akan dijalankan jika menuStore tidak cocok dengan salah satu dari kasus di atas. Dalam blok default, program mencetak pesan "Wrong input!" yang menandakan bahwa pengguna telah memasukkan pilihan yang salah atau tidak valid.
+
+Selanjutnya kita ke package kedua yaitu package **"menu"** yang berisi class **"CheeseSeblak.java, Menu.java, SeblakProduct.java, SpicySeblak.java"**.
+
+Pertama, kita akan membahas class pertama yaitu **"CheeseSeblak.java"**.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/023cfb44-7e1f-41ef-9487-582fecbd64f6)
+
+**"package menu;"** ini adalah deklarasi paket (package) di mana kelas CheeseSeblak berada. Paket ini digunakan untuk mengelompokkan kelas-kelas terkait bersama dalam satu direktori.
+
+**"public class CheeseSeblak extends SeblakProduct {"** ini adalah deklarasi kelas CheeseSeblak yang merupakan turunan dari kelas SeblakProduct. Dengan kata lain, CheeseSeblak adalah subkelas dari SeblakProduct dan mewarisi sifat dan perilaku dari kelas induknya.
+
+**"private String cheeseType;"** ini adalah deklarasi variabel instance cheeseType yang merupakan tipe data String. Variabel ini digunakan untuk menyimpan informasi tentang jenis keju (cheese type) dari produk Cheese Seblak.
+
+**"public CheeseSeblak(String idProduct, String nameProduct, int priceProduct, String cheeseType) { ... }"** ini adalah konstruktor kelas CheeseSeblak. Konstruktor ini digunakan untuk membuat objek CheeseSeblak baru dengan menginisialisasi nilai dari variabel-instance (idProduct, nameProduct, priceProduct, dan cheeseType) saat objek dibuat.
+
+**"public final String getCheeseType() { ... }"** ini adalah metode getter (getCheeseType()) yang digunakan untuk mengambil nilai variabel cheeseType. Metode ini bersifat final, yang berarti tidak dapat di-overide oleh subkelas.
+
+**"public void setLevelCheese(String cheeseType) { ... }"** ini adalah metode setter (setLevelCheese()) yang digunakan untuk mengatur nilai variabel cheeseType dengan nilai yang baru.
+
+**"@Override"** ini adalah anotasi @Override yang menunjukkan bahwa metode yang berada di bawahnya (printProduct()) akan meng-override (melakukan substitusi) metode dengan nama yang sama dari kelas induk (SeblakProduct).
+
+**"public void printProduct() { ... }"** ini adalah implementasi metode printProduct() yang diwarisi dari kelas SeblakProduct. Metode ini mencetak informasi produk Cheese Seblak, termasuk ID, nama, harga, dan jenis keju (cheese type).
+
