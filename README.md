@@ -1,7 +1,10 @@
 # PBO Post Test 2
 Nama          : Aristy Avrianti
+
 NIM           : 2209116027
+
 Kelas         : Sistem Informasi'A 22
+
 Mata Kuliah   : Pemrograman Berorientasi Objek
 
 Pada source package utama terdapat 2 package yaitu, kedai seblak dan menu. Pada package kedai seblak terdapat class "SeblakStore.java" sebagai Main Class. Di dalam class tersebut terdapat program sebagai berikut :
