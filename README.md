@@ -5,6 +5,7 @@ Kelas         : Sistem Informasi'A 22
 Mata Kuliah   : Pemrograman Berorientasi Objek
 
 Pada source package utama terdapat 2 package yaitu, kedai seblak dan menu. Pada package kedai seblak terdapat class "SeblakStore.java" sebagai Main Class. Di dalam class tersebut terdapat program sebagai berikut :
+
 ![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/c13d6938-2e71-4c20-91d1-1a164fd7525e)
 **"package kedaiseblak;"** ini adalah pernyataan yang mendefinisikan paket (package) tempat kelas-kelas Java dalam file ini berada. Dalam hal ini, kelas-kelas Java tersebut dimasukkan ke dalam paket dengan nama kedaiseblak.
 **"import java.util.Scanner;"** ini adalah pernyataan yang mengimport kelas Scanner dari paket java.util. Kelas Scanner digunakan untuk membaca input dari pengguna.
