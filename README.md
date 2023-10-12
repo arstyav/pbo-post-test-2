@@ -248,6 +248,32 @@ Selanjutnya kita akan ke class yang terakhit yaitu, **"SeblakProduct.java"**.
 
 **"abstract public void printProduct();"** Ini adalah deklarasi metode abstrak (printProduct()) yang harus diimplementasikan oleh setiap subkelas SeblakProduct. Metode ini bertanggung jawab untuk mencetak detail produk ke layar. Karena ini adalah metode abstrak, itu berarti setiap subkelas SeblakProduct harus memberikan implementasi konkret untuk metode ini.
 
+Selanjutnya adalah **Penjelasan Output**
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/0d254c5b-9227-4fe6-8254-55e9d9da8e85)
+
+Diatas adalah tampilan awal hasil program, program akan menampilkan menu. Dimana terdapat menu menambah, menghapus, melihat (print), dan update. 
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/d67e5647-69ee-449f-bdc0-e1e52f3523dd)
+
+Diatas adalah tampilan jika kita memilih menu 1, yaitu menambahkan menu Spicy Seblak. Maka user akan diminta untuk memasukkan ID, Nama, Harga, dan Tingkat Kepedasan. Setelah selesai, program akan otomatis kembali ke menu awal.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/a56cc60c-cf73-49ff-9fdf-82b6b35ed842)
+
+Sama halnya dengan seblak pedas, jika kita memilih menu 2 maka user dapat menambahkan menu Cheese Seblak. User akan kembali diminta memasukkan ID, Nama, Harga, dan Jenis Keju.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/334fcf91-a3e5-437e-97d8-5777412675b8)
+
+Pada menu 3, kita dapat menghapus menu di menu Spicy Seblak. User akan diminta memasukkan ID Menu yang ingin dihapus dan sesuai dengan menu yang tersedia. Jika berhasil, maka akan muncul output ""**"Spicy Seblak with ID 01 has been removed!"**
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/131dc8e9-250d-4cc4-910e-a8de22418499)
+
+Sama halnya dengan menu 3, kita juga dapat menghapus menu di menu Cheese Seblak.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/012a5f64-9a7d-4cdb-bb7e-5b3109c5400b)
+
+Pada menu 5, kita dapat menampilkan semua menu yang telah ditambahkan.
+
 
 
 
