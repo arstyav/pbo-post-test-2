@@ -33,7 +33,34 @@ Pada source package utama terdapat 2 package yaitu, kedai seblak dan menu. Pada 
 
 Di sini, program menunggu pengguna memasukkan angka pilihan menu. **"scanner.nextInt()"** digunakan untuk membaca integer yang dimasukkan oleh pengguna. Nilai ini kemudian disimpan dalam variabel menuStore. Setelah itu, **"scanner.nextLine()"** digunakan untuk membersihkan karakter baru (newline) dari buffer input, sehingga input berikutnya tidak terpengaruh oleh karakter newline sebelumnya.
 
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/c3a8853a-2817-4b92-bc55-2ef658cfbf7a)
 
+**"switch (menuStore) {"** ini adalah konstruksi switch statement. Nilai dari variabel menuStore akan dibandingkan dengan nilai-nilai dalam kasus-kasus (case) yang ada di dalam blok switch ini.
 
+**"case 1:"** ini adalah kasus pertama di dalam switch statement. Jika nilai menuStore adalah 1, program akan menampilkan pesan menu "Spicy Seblak" ke layar. Kemudian program menunggu pengguna memasukkan ID, nama, harga, dan tingkat kepedasan Spicy Seblak. Variabel-variabel ini kemudian digunakan untuk membuat objek SpicySeblak.
 
+**"Menu.addSpicySeblak(new SpicySeblak(idSpicy, nameSpicy, priceSpicy, levelSpicy));"** ini adalah bagian yang menambahkan objek SpicySeblak baru ke dalam menu. Metode addSpicySeblak merupakan bagian dari kelas Menu yang berguna untul menambahkan item Spicy Seblak ke dalam menu.
+
+**"break;"** ini adalah pernyataan break yang menghentikan eksekusi dari switch statement. Setelah menjalankan kode dalam satu kasus, program akan keluar dari switch statement.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/93c7db76-bf42-4988-9a91-53af7287c4a0)
+
+**"case 2:"** ini adalah kasus kedua di dalam switch statement. Jika nilai menuStore adalah 2, program akan menampilkan pesan menu "Cheese Seblak" ke layar. Kemudian, program menunggu pengguna memasukkan ID, nama, harga, dan tipe keju Cheese Seblak. Variabel-variabel ini kemudian digunakan untuk membuat objek CheeseSeblak.
+
+**"Menu.addCheeseSeblak(new CheeseSeblak(idCheese, nameCheese, priceCheese, cheeseType));"** ini adalah bagian yang menambahkan objek CheeseSeblak baru ke dalam menu. Metode addCheeseSeblak merupakan bagian dari kelas Menu yang berguna untuk menambahkan item Cheese Seblak ke dalam menu.
+
+![image](https://github.com/arstyav/pbo-post-test-2/assets/127498258/ff7023b1-1117-4a79-80d8-28773ca8227e)
+
+**"case 3:"** ini adalah kasus ketiga di dalam switch statement. Jika nilai menuStore adalah 3, program akan menampilkan pesan menu "Spicy Seblak" ke layar. 
+
+**"System.out.print("> ID: ");
+String idRemoveSpicy = scanner.nextLine();"** program menunggu pengguna memasukkan ID Spicy Seblak yang ingin dihapus dari menu.
+
+**"if (!Menu.checkIdSpicy(idRemoveSpicy)) {
+    System.out.println("ID not found!");
+    break;
+}"** program memanggil metode checkIdSpicy dari kelas Menu untuk memeriksa apakah ID Spicy Seblak yang dimasukkan oleh pengguna ada dalam menu atau tidak. Jika ID tidak ditemukan, program akan mencetak pesan "ID not found!" dan keluar dari switch statement menggunakan pernyataan break.
+
+**"Menu.removeSpicySeblak(idRemoveSpicy);
+System.out.println("Spicy Seblak with ID " + idRemoveSpicy + " has been removed!");"** Jika ID ditemukan, program memanggil metode removeSpicySeblak dari kelas Menu untuk menghapus objek Spicy Seblak dengan ID tersebut dari menu. Program kemudian mencetak pesan konfirmasi bahwa Spicy Seblak dengan ID yang dimasukkan telah dihapus.
 
